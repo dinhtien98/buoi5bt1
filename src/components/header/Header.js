@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { AppContext } from '../../AppContext'
 
 export default function Header() {
+  const {count}=useContext(AppContext)
   return (
-    <div>Header</div>
+    <div>count: {count}</div>
   )
 }
