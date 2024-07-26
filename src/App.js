@@ -7,6 +7,7 @@ import NotFound from "./components/error/NotFound";
 import Products from "./pages/products/Products";
 import ProductDetail from "./pages/productDetail/ProductDetail";
 import { AppProvider } from "./AppContext";
+import Cart from "./components/cart/Cart";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/detail/:id" element={<ProductDetail />} />
             <Route path="/price" element={<Price />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
       </AppProvider>
